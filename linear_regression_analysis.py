@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score , mean_absolute_error , mean_squared_error
 import matplotlib.pyplot as plt
 
-df1 = pd.read_csv("car_price_dataset_medium.csv")
+df1 = pd.read_csv(r"dataset/car_price_dataset_medium.csv")
 x = df1.drop(["Car_ID" , "Price_USD"] , axis=1)
 y = df1["Price_USD"]
 
